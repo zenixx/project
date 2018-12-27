@@ -17,10 +17,15 @@
 Данните са във файл с разширение .csv и представляват 396 реда и 33 колони 
 ## Зареждане и проверка
 Зареждаме файла по обичайния начин с **read.csv**
-Преглеждаме го:
-'''
+
+
+```
 MC<-read.csv("student-mat.csv")
-'''
+```
+Преглеждаме го:
+
+```
+>summary(MC)
 school   sex          age       address famsize   Pstatus      Medu            Fedu      
  GP:349   F:208   Min.   :15.0   R: 88   GT3:281   A: 41   Min.   :0.000   Min.   :0.000  
  MS: 46   M:187   1st Qu.:16.0   U:307   LE3:114   T:354   1st Qu.:2.000   1st Qu.:2.000  
@@ -55,4 +60,4 @@ school   sex          age       address famsize   Pstatus      Medu            F
  Median : 4.000   Median :11.00   Median :11.00   Median :11.00  
  Mean   : 5.709   Mean   :10.91   Mean   :10.71   Mean   :10.42  
  3rd Qu.: 8.000   3rd Qu.:13.00   3rd Qu.:13.00   3rd Qu.:14.00  
- Max.   :75.000   Max.   :19.00   Max.   :19.00   Max.   :20.00  
+ Max.   :75.000   Max.   :19.00   Max.   :19.00   Max.   :20.00  ```
