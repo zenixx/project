@@ -18,7 +18,9 @@
 ## Зареждане и проверка
 Зареждаме файла по обичайния начин с **read.csv**
 Преглеждаме го:
+'''
 MC<-read.csv("student-mat.csv")
+'''
 school   sex          age       address famsize   Pstatus      Medu            Fedu      
  GP:349   F:208   Min.   :15.0   R: 88   GT3:281   A: 41   Min.   :0.000   Min.   :0.000  
  MS: 46   M:187   1st Qu.:16.0   U:307   LE3:114   T:354   1st Qu.:2.000   1st Qu.:2.000  
