@@ -12,6 +12,6 @@
   - shapiro.test
   - kruskal.test
 - И по - сложният анализ simple/multiple linear regression
-
+###
 # Начални данни
 Данните са във файл с разширение .csv и представляват 
