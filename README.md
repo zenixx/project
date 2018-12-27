@@ -8,7 +8,7 @@
 - Проверка на състоянията но родителите
 - Вероятното приемане на ученика - уни и спец.
 - Проверка, чрез различни видове тестове и тяхната зависимост
-  -chisq.test
-  -shapiro.test
-  -kruskal.test
+  - chisq.test
+  - shapiro.test
+  - kruskal.test
 - И по - сложният анализ simple/multiple linear regression
