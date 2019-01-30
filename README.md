@@ -73,9 +73,7 @@ school   sex          age       address famsize   Pstatus      Medu            F
 
 Правим проверката за outliner-ите като построим boxplot
 
-![alt text](
-        project/Rplot.png
-      )
+![alt text](https://github.com/zenixx/project/blob/master/Rplot.png)
 
 Правим shapiro.test за abscens
 
