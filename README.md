@@ -154,7 +154,9 @@ is.numeric(MC$internet)
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot02.png)
 
 И същото за променливата x2
+
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot03.png)
 
 Дали са нормално разпределени
+
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot04.png)
