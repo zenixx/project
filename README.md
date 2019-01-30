@@ -65,7 +65,7 @@ school   sex          age       address famsize   Pstatus      Medu            F
 Hist
 
 Правим проверката на outliner-ите и построяване boxplot
-
+![nice](https://github.com/zenixx/project/blob/master/Rplot01.png)
 Правим shapiro.test за abscens
 
 ## Ще направим cor(сравнение) на трите оценки за първия и втория срок и фаналната оценка. Като така ще видим дали има някаква промяна при учениците. Също по - късно ще проверим няколко величини които биха влияли на финалната оценка, но първо .....
