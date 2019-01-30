@@ -149,8 +149,8 @@ is.numeric(MC$internet)
 ```
 И правим същото за romantic .....
 
-След това продължаваме с проверката с кой използва интернет и е в романтична връзка
-Първо въвеждаме променлива x1 за всички, които не използват интернет и проверяваме дали са във връзка или не
+**След това продължаваме с проверката с кой използва интернет и е в романтична връзка
+Първо въвеждаме променлива x1 за всички, които не използват интернет и проверяваме дали са във връзка или не**
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot02.png)
 
 И същото за променливата x2
@@ -160,3 +160,39 @@ is.numeric(MC$internet)
 Дали са нормално разпределени
 
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot04.png)
+
+## И ще завършим с 2 регресии за това дали годините дали влиаят на отсъствията, времето прекарано навън и свободното време и втората за финалната оценка какви фактори са най - вероятни да влиаят на нея.
+
+Започваме с първата и правим summary на данните от нея.
+```
+Call:
+lm(formula = MC[, "G3"] ~ MC[, "absences"] + MC[, "goout"] + 
+    MC[, "freetime"])
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-11.7804  -1.9287   0.2432   3.1915   9.2616 
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      11.35762    0.91361  12.432  < 2e-16 ***
+MC[, "absences"]  0.02533    0.02873   0.881  0.37864    
+MC[, "goout"]    -0.62129    0.21514  -2.888  0.00409 ** 
+MC[, "freetime"]  0.26101    0.23995   1.088  0.27736    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 4.548 on 391 degrees of freedom
+Multiple R-squared:  0.02221,	Adjusted R-squared:  0.0147 
+F-statistic:  2.96 on 3 and 391 DF,  p-value: 0.03219
+```
+Голямо t-value индикира това, че е по - малко вероятно коефициента да не е равно на 0
+
+След това даваме някакво име на summary-то и взимаме residuals му правим няколко изследвания
+```
+> model <- summary(lm(MC[,"age"]~MC[,"absences"] + MC[,"goout"] + MC[,"freetime"]))
+> r <- residuals(model)
+```
+Правим нормално разпределение
+
+![alt text](https://github.com/zenixx/project/blob/master/Rplot05.png)
