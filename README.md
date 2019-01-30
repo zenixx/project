@@ -152,3 +152,9 @@ is.numeric(MC$internet)
 След това продължаваме с проверката с кой използва интернет и е в романтична връзка
 Първо въвеждаме променлива x1 за всички, които не използват интернет и проверяваме дали са във връзка или не
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot02.png)
+
+И същото за променливата x2
+![alt text](https://github.com/zenixx/project/blob/master/Rplot03.png)
+
+Дали са нормално разпределени
+![alt text](https://github.com/zenixx/project/blob/master/Rplot04.png)
