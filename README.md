@@ -196,3 +196,12 @@ F-statistic:  2.96 on 3 and 391 DF,  p-value: 0.03219
 Правим нормално разпределение
 
 ![alt text](https://github.com/zenixx/project/blob/master/Rplot05.png)
+
+И shapiro.test
+
+```
+> 	Shapiro-Wilk normality test
+
+data:  r
+W = 0.96333, p-value = 2.232e-08
+```
